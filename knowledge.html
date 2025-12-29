@@ -1,0 +1,50 @@
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<body class="overflow-x-hidden">
+  <section
+    class="flex flex-col items-center justify-center w-full min-h-screen py-[80px]"
+  >
+  <p class="text-center text-xl font-medium mb-4">
+    Grafik kompleksitas waktu
+    <span class="font-semibold text-[#4CADFA]">ITERATIVE</span> dan
+    <span class="font-semibold text-[#F455E1]">REKURSIF</span>
+  </p>
+    <!-- card  -->
+    <div class="bg-white w-[60%] font-normal rounded-2xl px-4 py-7 shadow-lg border border-black/30 mx-auto">
+      <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar gap-4">
+        
+        <div id="item1" class="carousel-item w-full flex-col">
+          <img class="mt-3 mx-auto" src="./assets/10-100.png" alt="Grafik 10-100" />
+          <p class="text-base mt-5 mx-4 text-justify">
+            Pada rentang input kecil (n = 10 sampai 100), perbedaan waktu eksekusi
+            antara metode iteratif dan rekursif tidak terlihat secara signifikan.
+          </p>
+        </div>
+    
+        <div id="item2" class="carousel-item w-full flex-col">
+          <img class="mt-3 mx-auto" src="./assets/100-10000.png" alt="Grafik 100-1000" />
+          <p class="text-base mt-5 mx-4 text-justify">
+            Pada rentang menengah (n = 100 sampai 10000), metode iteratif mulai menunjukkan
+            efisiensi yang lebih stabil dibandingkan rekursif yang memakan tumpukan memori.
+          </p>
+        </div>
+      </div>
+    
+      <div class="flex w-full justify-center gap-4 py-2 mt-6">
+        <a href="#item1" class="btn btn-xs rounded-full border border-black/50 flex items-center justify-center pt-1 w-8 h-8"><</a>
+        <a href="#item2" class="btn btn-xs rounded-full border border-black/50 flex items-center justify-center pt-1 w-8 h-8">></a>
+      </div>
+    </div>
+    <div class="w-[60%] mt-8 flex justify-end">
+      <a
+        href="index.html"
+        class="px-3 py-2 bg-white rounded-full border border-black/70 hover:border-white hover:bg-[#4CADFA] hover:text-white"
+        >← Kembali</a
+      >
+    </div>
+  </section>
+</body>
