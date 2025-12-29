@@ -46,7 +46,7 @@ form.addEventListener("submit", function (e) {
     location.reload();
     return;
   }
-  if (cari.length >= 1) {
+  if (cari.length > 1) {
     alert("pencarian hanya bisa 1 huruf saja");
     location.reload();
     return;
