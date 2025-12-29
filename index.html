@@ -12,19 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Document</title>
   </head>
-  <body class="overflow-x-hidden py-[140px]">
+  <body class="overflow-x-hidden overflow-y-auto py-[170px] md:py-[140px] h-full px-5">
     <section
       class="relative flex flex-col items-center justify-center w-full font-normal min-h-screen gap-y-3"
     >
       <p class="text-sm">TUBES AKA - Mirfa, Raissa, Yasmin</p>
       <div
-        class="text-center flex flex-col justify-center items-center gap-y-2"
+        class="text-center flex flex-col justify-center items-center gap-y-2 w-full"
       >
-        <h1 class="text-4xl font-bold">Penghitung Karakter Huruf</h1>
-        <p class="text-lg text-black/40 font-medium max-w-[60%] mt-1">
+        <h1 class="text-2xl md:text-4xl font-bold">Penghitung Karakter Huruf</h1>
+        <p class="text-base md:text-lg text-black/40 font-medium w-[70%] md:max-w-[60%] mt-1">
           Membandingkan algoritma
           <span class="font-semibold text-[#4CADFA]">ITERATIVE</span> dengan
           algoritma
@@ -44,7 +45,7 @@
               placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
             ></textarea>
           </div>
-          <div class="flex justify-between items-end">
+          <div class="flex flex-col gap-y-7 md:gap-0 md:flex-row md:justify-between items-end">
             <div class="flex flex-col">
               <label class="mb-2" for="">Hitung kemunculan huruf berikut</label>
               <input
@@ -82,15 +83,13 @@
       </div>
 
       <!-- floating button  -->
-      <a class="w-16 h-16 p-3 rounded-full bg-red-300 absolute right-6 bottom-6 cursor-pointer" href="./knowledge.html">
+      <a class="w-16 h-16 p-3 rounded-full bg-white shadow-xl border border-black/40 absolute right-6 bottom-6 cursor-pointer" href="./knowledge.html">
         <img src="./assets/lamp.svg" alt="">
       </a>
     </section>
 
-    <!-- <a id="btnAnalisis" href="./analisis.html">Lihat Analisis Algoritma</a> -->
-
     <footer
-      class="text-xs text-center py-3 border-t border-black/40 text-black/50 mx-8"
+      class="text-xs text-center py-3 border-t border-black/40 text-black/50 mx-8 mt-9"
     >
       © 2025 Tubes AKA - Mirfa, Raissa, Yasmin. All Rights Reserved.
     </footer>
